@@ -9,12 +9,12 @@ WD="$PWD/setup/test_system"
 
 
 echo "TESTING SERIAL..."
-sfrun --workdir=$WD --parameter_file=$WD/parameters_serial --path_file=$WD/paths
+sfrun --workdir=$WD --parameter_file=$WD/parameters_serial.yaml --path_file=$WD/paths.yaml
 rm -rf $WD/output* $WD/scratch
 
 
 echo "TESTING multicore..."
-sfrun --workdir=$WD --parameter_file=$WD/parameters_multicore --path_file=$WD/paths
+sfrun --workdir=$WD --parameter_file=$WD/parameters_multicore.yaml --path_file=$WD/paths.yaml
 rm -rf $WD/output* $WD/scratch
 
 

@@ -13,12 +13,12 @@ export PYTHONPATH=$PYTHONPATH:$WD/problems
 
 
 # test LBFGS
-sfrun --workdir=$WD --parameter_file=$WD/parameters_LBFGS --path_file=$WD/paths
+sfrun --workdir=$WD --parameter_file=$WD/parameters_LBFGS.yaml --path_file=$WD/paths.yaml
 rm -rf $WD/output* $WD/scratch 
 
 
 # test NLCG
-sfrun --workdir=$WD --parameter_file=$WD/parameters_NLCG --path_file=$WD/paths
+sfrun --workdir=$WD --parameter_file=$WD/parameters_NLCG.yaml --path_file=$WD/paths.yaml
 rm -rf $WD/output* $WD/scratch 
 
 
