@@ -6,6 +6,7 @@ install:
   - pip install --upgrade pip setuptools wheel
   - pip install --only-binary=numpy,scipy numpy scipy
   - pip install coveralls
+  - pip install yaml
 
 script:
   - export PYTHONPATH=$PYTHONPATH:$(pwd)
